@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Galaxy Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Animated Background -->
+
+<div class="bg-animation">
+
+<div class="blob blob1"></div>
+
+<div class="blob blob2"></div>
+
+<div class="blob blob3"></div>
+
+<div class="blob blob4"></div>
+
+<div class="particles"></div>
+
+</div>
+
+<!-- Navigation -->
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-camera-retro"></i>
+
+<span>Galaxy Gallery</span>
+
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">Gallery</a></li>
+
+<li><a href="#">Collections</a></li>
+
+<li><a href="#">About</a></li>
+
+</ul>
+
+<button id="themeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h1>
+
+Discover
+
+<span>Beautiful</span>
+
+Images
+
+</h1>
+
+<p>
+
+A premium animated gallery with stunning visual effects,
+glassmorphism, neon glow, lightbox,
+favorites, search, filters,
+downloads and much more.
+
+</p>
+
+<div class="hero-buttons">
+
+<button class="explore">
+
+Explore Gallery
+
+</button>
+
+<button class="music">
+
+<i class="fa-solid fa-music"></i>
+
+Music
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Controls -->
+
+<section class="controls">
+
+<input
+
+type="text"
+
+id="search"
+
+placeholder="Search anything...">
+
+<button id="shuffle">
+
+<i class="fa-solid fa-shuffle"></i>
+
+Shuffle
+
+</button>
+
+<button id="random">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+Random
+
+</button>
+
+</section>
+
+<!-- Filter Buttons -->
+
+<section class="filters">
+
+<button
+class="filter active"
+data-filter="all">
+
+✨ All
+
+</button>
+
+<button
+class="filter"
+data-filter="nature">
+
+🌿 Nature
+
+</button>
+
+<button
+class="filter"
+data-filter="city">
+
+🏙 Cities
+
+</button>
+
+<button
+class="filter"
+data-filter="animals">
+
+🐶 Animals
+
+</button>
+
+<button
+class="filter"
+data-filter="food">
+
+🍕
+
+Food
+
+</button>
+
+<button
+class="filter"
+data-filter="cars">
+
+🚗 Cars
+
+</button>
+
+<button
+class="filter"
+data-filter="travel">
+
+✈ Travel
+
+</button>
+
+<button
+class="filter"
+data-filter="space">
+
+🌌 Space
+
+</button>
+
+</section>
+
+<!-- Gallery -->
+
+<section class="gallery">
+<!-- Card 1 -->
+<div class="gallery-item nature">
+    <span class="badge">🔥 Trending</span>
+    <button class="favorite"><i class="fa-regular fa-heart"></i></button>
+
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=900"
+         alt="Mountain Lake">
+
+    <div class="overlay">
+        <h3>Mountain Lake</h3>
+        <p>Nature • 4.9 ★</p>
+
+        <div class="card-actions">
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>254</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Card 2 -->
+
+<div class="gallery-item city">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=900"
+         alt="City Night">
+
+    <div class="overlay">
+
+        <h3>City Lights</h3>
+
+        <p>City • 4.8 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>182</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 3 -->
+
+<div class="gallery-item animals">
+
+    <span class="badge">⭐ Popular</span>
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=900"
+         alt="Golden Dog">
+
+    <div class="overlay">
+
+        <h3>Golden Friend</h3>
+
+        <p>Animals • 5.0 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>496</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 4 -->
+
+<div class="gallery-item food">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=900"
+         alt="Pizza">
+
+    <div class="overlay">
+
+        <h3>Italian Pizza</h3>
+
+        <p>Food • 4.7 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>318</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 5 -->
+
+<div class="gallery-item cars">
+
+    <span class="badge">NEW</span>
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900"
+         alt="Sports Car">
+
+    <div class="overlay">
+
+        <h3>Super Car</h3>
+
+        <p>Cars • 4.9 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>627</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 6 -->
+
+<div class="gallery-item travel">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900"
+         alt="Beach">
+
+    <div class="overlay">
+
+        <h3>Tropical Beach</h3>
+
+        <p>Travel • 4.8 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>415</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 7 -->
+
+<div class="gallery-item space">
+
+    <span class="badge">🚀 Featured</span>
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=900"
+         alt="Galaxy">
+
+    <div class="overlay">
+
+        <h3>Galaxy</h3>
+
+        <p>Space • 5.0 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>890</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 8 -->
+
+<div class="gallery-item nature">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900"
+         alt="Forest">
+
+    <div class="overlay">
+
+        <h3>Green Forest</h3>
+
+        <p>Nature • 4.8 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>273</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Card 9 -->
+
+<div class="gallery-item flowers">
+
+    <span class="badge">🌸 New</span>
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=900"
+         alt="Flowers">
+
+    <div class="overlay">
+
+        <h3>Blooming Flowers</h3>
+
+        <p>Flowers • 4.9 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>341</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 10 -->
+
+<div class="gallery-item technology">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900"
+         alt="Technology">
+
+    <div class="overlay">
+
+        <h3>Future Tech</h3>
+
+        <p>Technology • 4.8 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>489</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 11 -->
+
+<div class="gallery-item bikes">
+
+    <span class="badge">🏍 Fast</span>
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=900"
+         alt="Motorcycle">
+
+    <div class="overlay">
+
+        <h3>Sport Bike</h3>
+
+        <p>Motorcycle • 4.7 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>265</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 12 -->
+
+<div class="gallery-item gaming">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=900"
+         alt="Gaming">
+
+    <div class="overlay">
+
+        <h3>Gaming Setup</h3>
+
+        <p>Gaming • 5.0 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>782</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 13 -->
+
+<div class="gallery-item architecture">
+
+    <span class="badge">🏛 Classic</span>
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=900"
+         alt="Architecture">
+
+    <div class="overlay">
+
+        <h3>Modern Architecture</h3>
+
+        <p>Architecture • 4.9 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>530</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 14 -->
+
+<div class="gallery-item birds">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?w=900"
+         alt="Bird">
+
+    <div class="overlay">
+
+        <h3>Colorful Bird</h3>
+
+        <p>Birds • 4.8 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>318</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 15 -->
+
+<div class="gallery-item sunset">
+
+    <span class="badge">🌅 Beautiful</span>
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900"
+         alt="Sunset">
+
+    <div class="overlay">
+
+        <h3>Golden Sunset</h3>
+
+        <p>Sunset • 5.0 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>945</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 16 -->
+
+<div class="gallery-item waterfalls">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=900"
+         alt="Waterfall">
+
+    <div class="overlay">
+
+        <h3>Crystal Waterfall</h3>
+
+        <p>Nature • 4.9 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
+
+            <button class="like-btn">
+                👍 <span>604</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Card 17 -->
+
+<div class="gallery-item travel">
+
+    <span class="badge">✈ Popular</span>
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900"
+         alt="Mountain Road">
+
+    <div class="overlay">
+
+        <h3>Mountain Adventure</h3>
+
+        <p>Travel • 4.9 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn"><i class="fa-solid fa-expand"></i></button>
+
+            <button class="download-btn"><i class="fa-solid fa-download"></i></button>
+
+            <button class="like-btn">👍 <span>522</span></button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 18 -->
+
+<div class="gallery-item city">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=900"
+         alt="Bridge">
+
+    <div class="overlay">
+
+        <h3>City Bridge</h3>
+
+        <p>City • 4.8 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn"><i class="fa-solid fa-expand"></i></button>
+
+            <button class="download-btn"><i class="fa-solid fa-download"></i></button>
+
+            <button class="like-btn">👍 <span>378</span></button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 19 -->
+
+<div class="gallery-item food">
+
+    <span class="badge">🍰 Sweet</span>
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=900"
+         alt="Dessert">
+
+    <div class="overlay">
+
+        <h3>Delicious Dessert</h3>
+
+        <p>Food • 4.9 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn"><i class="fa-solid fa-expand"></i></button>
+
+            <button class="download-btn"><i class="fa-solid fa-download"></i></button>
+
+            <button class="like-btn">👍 <span>645</span></button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 20 -->
+
+<div class="gallery-item animals">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1516934024742-b461fba47600?w=900"
+         alt="Cat">
+
+    <div class="overlay">
+
+        <h3>Cute Cat</h3>
+
+        <p>Animals • 5.0 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn"><i class="fa-solid fa-expand"></i></button>
+
+            <button class="download-btn"><i class="fa-solid fa-download"></i></button>
+
+            <button class="like-btn">👍 <span>932</span></button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 21 -->
+
+<div class="gallery-item flowers">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=900"
+         alt="Rose">
+
+    <div class="overlay">
+
+        <h3>Red Roses</h3>
+
+        <p>Flowers • 4.8 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn"><i class="fa-solid fa-expand"></i></button>
+
+            <button class="download-btn"><i class="fa-solid fa-download"></i></button>
+
+            <button class="like-btn">👍 <span>405</span></button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 22 -->
+
+<div class="gallery-item technology">
+
+    <span class="badge">💻 AI</span>
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
+         alt="Laptop">
+
+    <div class="overlay">
+
+        <h3>Developer Desk</h3>
+
+        <p>Technology • 4.9 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn"><i class="fa-solid fa-expand"></i></button>
+
+            <button class="download-btn"><i class="fa-solid fa-download"></i></button>
+
+            <button class="like-btn">👍 <span>714</span></button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 23 -->
+
+<div class="gallery-item space">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=900"
+         alt="Nebula">
+
+    <div class="overlay">
+
+        <h3>Deep Space</h3>
+
+        <p>Space • 5.0 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn"><i class="fa-solid fa-expand"></i></button>
+
+            <button class="download-btn"><i class="fa-solid fa-download"></i></button>
+
+            <button class="like-btn">👍 <span>1285</span></button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 24 -->
+
+<div class="gallery-item cars">
+
+    <span class="badge">⚡ Fast</span>
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900"
+         alt="Luxury Car">
+
+    <div class="overlay">
+
+        <h3>Luxury Car</h3>
+
+        <p>Cars • 4.9 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn"><i class="fa-solid fa-expand"></i></button>
+
+            <button class="download-btn"><i class="fa-solid fa-download"></i></button>
+
+            <button class="like-btn">👍 <span>801</span></button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Card 25 -->
+
+<div class="gallery-item nature">
+
+    <button class="favorite">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900"
+         alt="Mountain Peak">
+
+    <div class="overlay">
+
+        <h3>Snow Mountain</h3>
+
+        <p>Nature • 5.0 ★</p>
+
+        <div class="card-actions">
+
+            <button class="view-btn"><i class="fa-solid fa-expand"></i></button>
+
+            <button class="download-btn"><i class="fa-solid fa-download"></i></button>
+
+            <button class="like-btn">👍 <span>1110</span></button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- Premium Lightbox -->
+
+<div class="lightbox">
+
+    <span class="close">&times;</span>
+
+    <button class="prev">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <img id="lightboxImage" src="" alt="">
+
+    <button class="next">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <h2 id="lightboxTitle"></h2>
+
+    <a id="downloadBtn" download>
+        <i class="fa-solid fa-download"></i>
+        Download
+    </a>
+
+</div>
+
+<button id="scrollTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<footer>
+
+    <h2>Galaxy Gallery</h2>
+
+    
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
